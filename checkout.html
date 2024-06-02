@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FLATICON ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+   <!--=============== SWIPER CSS ===============-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Ecommerce Website</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      <div class="header_top">
+          <div class="header_container container">
+              <div class="header_contact">
+                  <span>(+01) - 2345 - 6789</span>
+                  <span>Our location</span>
+              </div>
+              <p class="header-alert-news">Super Value Deals - Save more with coupons</p>
+              <a href="login.html" class="header_top-action">
+                  Log In / Sign Up
+              </a>
+          </div>
+      </div>
+
+      <nav class="nav container">
+          <a href="index.html" class="nav_logo">
+              <img src="img/logo.svg" class="nav_logo-img">
+          </a>
+          <div class="nav_menu" id="nav-menu">
+              <ul class="nav_list">
+                  <li class="nav_item">
+                      <a href="index.html" class="nav_link">Home</a>
+                  </li>
+
+                  <li class="nav_item">
+                      <a href="shop.html" class="nav_link">Shop</a>
+                  </li>
+                  
+                  <li class="nav_item">
+                      <a href="index.html#new-arrivals" class="nav_link">New Arrivals</a>
+                  </li>
+
+                  <li class="nav_item">
+                      <a href="accounts.html" class="nav_link">My Account</a>
+                  </li>
+
+                  
+
+                  <li class="nav_item">
+                      <a href="login-register.html" class="nav_link">Login</a>
+                  </li>
+              </ul>
+
+              <div class="header_search">
+                  <input type="text" placeholder="Search for items..." class="form_input">
+                  <button class="search_btn">
+                      <img src="img/search.png" alt="">
+                  </button>
+              </div>
+          </div>
+
+          <div class="header_user-actions">
+              <a href="wishlist.html" class="header_action-btn">
+                  <img src="img/icon-heart.svg">
+                  <span class="count">0</span>
+              </a>
+              <a href="cart.html" class="header_action-btn">
+                  <img src="img/icon-cart.svg">
+                  <span class="count" id="cart-count">0</span>
+              </a>
+          </div>
+      </nav>
+  </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== BREADCRUMB ===============-->
+      <section class="breadcrumb">
+        <ul class="breadcrumb_list flex container">
+            <li><a href="index.html" class="breadcrumb_link">Home</a></li>
+            <li><span class="breadcrumb_link">></span></li>
+            <li><a href="shop.html" class="breadcrumb_link">Shop</a></li>
+            <li><span class="breadcrumb_link">></span></li>
+            <li><span class="breadcrumb_link">Checkout</span></li>
+        </ul>
+      </section>
+
+      <!--=============== CHECKOUT ===============-->
+      <section class="checkout section_lg">
+        <div class="checkout_container container grid">
+          <div class="checkout_group">
+            <h3 class="section_title">Billing Details</h3>
+
+            <form action="" class="form grid">
+              <input type="text" placeholder="Name" class="form_input">
+              <input type="text" placeholder="Address" class="form_input">
+              <input type="text" placeholder="City" class="form_input">
+              <input type="text" placeholder="Country" class="form_input">
+              <input type="text" placeholder="Postcode" class="form_input">
+              <input type="text" placeholder="Phone" class="form_input">
+              <input type="email" placeholder="Email" class="form_input">
+
+              <h3 class="checkout_title">Additional Information</h3>
+              <textarea name="" placeholder="Order note" id="" cols="30" rows="10" class="form_input textarea"></textarea>
+            </form>
+          </div>
+
+          <div class="checkout_group">
+            <h3 class="section_title">Cart Totals</h3>
+            <table class="order_table">
+              <tr>
+                <th colspan="2">Products</th>
+                <th>Total</th>
+              </tr>
+              <tr>
+                <td><img src="img/product-1-2.jpg" alt="" class="order_img"></td>
+                <td>
+                  <h3 class="table_title">Yidarton Women Summer Blue</h3>
+                  <p class="table_quantity">x 2</p>
+                </td>
+
+                <td><span class="table_price">$180.00</span></td>
+              </tr>
+
+              <tr>
+                <td><img src="img/product-2-1.jpg" alt="" class="order_img"></td>
+                <td>
+                  <h3 class="table_title">LDB MOON Women Summer</h3>
+                  <p class="table_quantity">x 1</p>
+                </td>
+
+                <td><span class="table_price">$80.00</span></td>
+              </tr>
+
+              <tr>
+                <td><span class="order_subtitle">SubTotal</span></td>
+              <td colspan="2"><span class="table_price">$55.00</span></td>
+              </tr>
+              <tr>
+                <td><span class="order_subtitle">Shipping</span></td>
+                <td colspan="2"><span class="table_price">$1.00</span></td>
+                </tr>
+                <tr>
+                  <td><span class="order_subtitle">Total</span></td>
+                  <td colspan="2"><span class="order_grand-total">$56.00</span></td>
+                  </tr>
+            </table>
+
+            <div class="payment_methods">
+              <h3 class="checkout_title payment_title">Payment</h3>
+              <div class="payment_option flex">
+                <input type="radio" name="radio" checked class="payment_input">
+                <label for="" class="payment_label">Direct Bank Transfer</label>
+              </div>
+
+              <div class="payment_option flex">
+                <input type="radio" name="radio" checked class="payment_input">
+                <label for="" class="payment_label">Check Payment</label>
+              </div>
+
+              <div class="payment_option flex">
+                <input type="radio" name="radio" checked class="payment_input">
+                <label for="" class="payment_label">E-Sewa</label>
+              </div>
+            </div>
+
+            <button class="btn btn-md">Place Order</button>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== NEWSLETTER ===============-->
+      <section class="newsletter section">
+        <div class="newsletter_container container grid">
+            <h3 class="newsletter_title flex"s>
+                <img src="img/icon-email.svg" class="newsletter_icon">
+                Sign up to Newsletter
+            </h3>
+
+            <p class="newsletter_description">
+                ...and receive $25 coupon for first shopping.
+            </p>
+
+            <form action="" class="newsletter_form">
+                <input placeholder="Enter your email" class="newsletter_input">
+                <button type="text" class="newsletter_btn">Subscribe</button>
+            </form>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+      <div class="footer_container grid">
+          <div class="footer_content">
+              <a href="index.html" class="footer_logo">
+                  <img src="img/logo.svg" alt="" class="footer_logo-img">
+              </a>
+              <h4 class="footer_subtitle">Contact</h4>
+
+              <p class="footer_description">
+                  <span>Address:</span> 562 wellington Road, Street 32,San Francisco
+              </p>
+              <p class="footer_description">
+                  <span>Phone:</span> 9999999999999 / 898888888888888
+              </p>
+              <p class="footer_description">
+                  <span>Hours:</span> 10:00 - 18:00, Sun - Fri
+              </p>
+
+              <div class="footer_social">
+                  <h4 class="footer_subtitle">Follow Me</h4>
+                  <div class="footer_social-links flex">
+                      <a href=""><img src="img/icon-facebook.svg" class="footer_social-icon"></a>
+
+                      <a href=""><img src="img/icon-instagram.svg" class="footer_social-icon"></a>
+
+                      <a href=""><img src="img/icon-pinterest.svg" class="footer_social-icon"></a>
+
+                      <a href=""><img src="img/icon-twitter.svg" class="footer_social-icon"></a>
+                      <a href=""><img src="img/icon-youtube.svg" class="footer_social-icon"></a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="footer_content">
+              <h3 class="footer_title">Address</h3>
+              <ul class="footer_links">
+                  <li><a href="" class="footer_link">About Us</a></li>
+                  <li><a href="" class="footer_link">Delivery Information</a></li>
+                  <li><a href="" class="footer_link">Privacy Policy</a></li>
+                  <li><a href="" class="footer_link">Terms & Conditions</a></li>
+                  <li><a href="" class="footer_link">Contact Us</a></li>
+                  <li><a href="" class="footer_link">Support Center</a></li>
+              </ul>
+          </div>
+
+          <div class="footer_content">
+              <h3 class="footer_title">My Account</h3>
+              <ul class="footer_links">
+                  <li><a href="" class="footer_link">Sign In</a></li>
+                  <li><a href="" class="footer_link">View Cart</a></li>
+                  <li><a href="" class="footer_link">My Wishlist</a></li>
+                  <li><a href="" class="footer_link">Track My Order</a></li>
+                  <li><a href="" class="footer_link">Help</a></li>
+                  <li><a href="" class="footer_link">Order</a></li>
+              </ul>
+          </div>
+
+          <div class="footer_content">
+              <h3 class="footer_title">Secured Payment Gateways</h3>
+
+              <img src="img/payment-method.png" alt="" class="payment_img">
+          </div>
+      </div>
+
+      <div class="footer_bottom">
+          <p class="copyright">&copy; 2023 ppp. All rights reserved</p>
+          <span class="designer">Designed by something</span>
+      </div>
+  </footer>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="script.js"></script>
+  </body>
+</html>

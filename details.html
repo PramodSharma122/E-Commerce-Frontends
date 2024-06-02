@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FLATICON ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Ecommerce Website</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <div class="header_top">
+            <div class="header_container container">
+                <div class="header_contact">
+                    <span>(+01) - 2345 - 6789</span>
+                    <span>Our location</span>
+                </div>
+                <p class="header-alert-news">Super Value Deals - Save more with coupons</p>
+                <a href="login.html" class="header_top-action">
+                    Log In / Sign Up
+                </a>
+            </div>
+        </div>
+
+        <nav class="nav container">
+            <a href="index.html" class="nav_logo">
+                <img src="img/logo.svg" class="nav_logo-img">
+            </a>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="index.html" class="nav_link">Home</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="shop.html" class="nav_link">Shop</a>
+                    </li>
+                    
+                    <li class="nav_item">
+                        <a href="index.html#new-arrivals" class="nav_link">New Arrivals</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="accounts.html" class="nav_link">My Account</a>
+                    </li>
+
+                    
+
+                    <li class="nav_item">
+                        <a href="login-register.html" class="nav_link">Login</a>
+                    </li>
+                </ul>
+
+                <div class="header_search">
+                    <input type="text" placeholder="Search for items..." class="form_input">
+                    <button class="search_btn">
+                        <img src="img/search.png" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <div class="header_user-actions">
+                <a href="wishlist.html" class="header_action-btn">
+                    <img src="img/icon-heart.svg">
+                    <span class="count">0</span>
+                </a>
+                <a href="cart.html" class="header_action-btn" id="cart-icon">
+                    <img src="img/icon-cart.svg">
+                    <span class="count" id="cart-count">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== BREADCRUMB ===============-->
+      <section class="breadcrumb">
+        <ul class="breadcrumb_list flex container">
+            <li><a href="index.html" class="breadcrumb_link">Home</a></li>
+            <li><span class="breadcrumb_link">></span></li>
+            <li><a href="shop.html" class="breadcrumb_link">Fashion</a></li>
+            <li><span class="breadcrumb_link">></span></li>
+            <li><span class="breadcrumb_link">Henley Shirt</span></li>
+        </ul>
+      </section>
+
+      <!--=============== DETAILS ===============-->
+      <section class="details section_lg">
+        <div class="details_container container grid">
+            <div class="details_group">
+                <img src="img/product-8-1.jpg" class="details_img">
+
+                <div class="details_small-images grid">
+                    <img src="img/product-8-2.jpg" class="details_small-img">                    
+                    <img src="img/product-8-1.jpg" class="details_small-img">                    
+                    <img src="img/product-8-2.jpg" class="details_small-img">                    
+
+                </div>
+            </div>
+
+            <div class="details_group">
+                <h3 class="details_title">Henley Shirt</h3>
+                <p class="details_brand">Brands: <span>adidas</span></p>
+
+                <div class="details_price flex">
+                    <span class="new_price">$116</span>
+                    <span class="old_price">$116</span>
+                    <span class="save_price">25% Off</span>
+                </div>
+
+                <p class="short_description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iusto unde cupiditate soluta cumque voluptatem quos, maxime nesciunt molestiae deserunt temporibus praesentium consectetur laudantium veritatis delectus. Neque cumque facilis similique.
+                </p>
+
+                <ul class="product_list">
+                    <li class="list_item flex">
+                        <i class="fa fa-crown"></i> 1 Year AL Jazeera Brand Warranty
+                    </li>
+                    <li class="list_item flex">
+                        <i class="fa-solid fa-rotate"></i> 1 Week Return Policy
+                    </li>
+                    <li class="list_item flex">
+                        <i class="fa-regular fa-credit-card"></i> Cash on Delivery available
+                    </li>
+                </ul>
+
+                <!-- <div class="details_color flex">
+                    <span class="details_color-title">Color</span>
+
+                    <ul class="color_list">
+                        <li>
+                            <a href="#" class="color_link" style="background-color: hsl(37,100%,65%);"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="color_link" style="background-color: hsl(353,100%,67%);"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="color_link" style="background-color: hsl(49,100%,60%);"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="color_link" style="background-color: hsl(304,100%,78%);"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="color_link" style="background-color: hsl(126,61%,52%);"></a>
+                        </li>
+                    </ul>
+                </div> -->
+
+                <div class="details_size flex">
+                    <span class="details_size-title">Size</span>
+
+                    <ul class="size_list">
+                        <li>
+                            <a href="#" class="size_link size-active">M</a>
+                        </li>
+                        <li>
+                            <a href="#" class="size_link">L</a>
+                        </li>
+                        <li>
+                            <a href="#" class="size_link">XL</a>
+                        </li>
+                        <li>
+                            <a href="#" class="size_link">XXL</a>
+                        </li>
+                        <li>
+                            <a href="#" class="size_link">Small</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="details_action product">
+                    <input type="number" class="quantity" value="1">
+
+                    <button class="btn btn-sm add-to-cart" data-image="img/product-8-1.jpg" data-name="Henley Shirt" data-price="110">Add to Cart</button>
+                    <a href="#" class="details_action-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+                </div>
+                <ul class="details_meta">
+                    <li class="meta_list flex"><span>SKU:</span> FWM15VKT</li>
+                    <li class="meta_list flex"><span>Tags:</span> Cloth, Women, Dress</li>
+                    <li class="meta_list flex"><span>Availability:</span> 8 Items In Stock</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+
+      <!--=============== DETAILS TAB ===============-->
+      <section class="details_tab container">
+        <div class="detail_tabs">
+            <!-- <span class="detail_tab active-tab" data-target="#info">Additional Info</span> -->
+            
+            <span class="detail_tab active-tab">Reviews(3)</span>
+        </div>
+
+        <div class="details_tabs-content">
+            <!-- <div class="details_tab-content active-tab" content id="info">
+                <table class="info_table">
+                    <tr>
+                        <th>Stand Up</th>
+                        <td>35"L x 24"W x 37-45"H(front to back wheel)</td>
+                    </tr>
+                    <tr>
+                        <th>Folded(w/o wheels)</th>
+                        <td>32.5"L x 18.5"W x 16.5"H</td>
+                    </tr>
+                    <tr>
+                        <th>Folded(w/ wheels)</th>
+                        <td>32.5"L x 24"W x 18.5"H</td>
+                    </tr>
+                    <tr>
+                        <th>Door Pass Through</th>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <th>Frame</th>
+                        <td>Aluminum</td>
+                    </tr>
+                    <tr>
+                        <th>Weight(w/o wheels)</th>
+                        <td>20 LBS</td>
+                    </tr>
+                    <tr>
+                        <th>Weight Capacity</th>
+                        <td>60 LBS</td>
+                    </tr>
+                    <tr>
+                        <th>Width</th>
+                        <td>24"</td>
+                    </tr>
+                    <tr>
+                        <th>Handle height (ground to handle)</th>
+                        <td>37-45"</td>
+                    </tr>
+                    <tr>
+                        <th>Wheels</th>
+                        <td>12" air / wide track slick tread</td>
+                    </tr>
+                    <tr>
+                        <th>Seat back height</th>
+                        <td>21.5"</td>
+                    </tr>
+                    <tr>
+                        <th>Head room (inside canopy)</th>
+                        <td>25"</td>
+                    </tr>
+                    <tr>
+                        <th>Color</th>
+                        <td>Black, Blue, Red, White</td>
+                    </tr>
+                    <tr>
+                        <th>Size</th>
+                        <td>M, S</td>
+                    </tr>
+                </table>
+            </div> -->
+
+            <div class="details_tab-content" content id="reviews">
+                <div class="reviews_container grid">
+                    <div class="review_single">
+                        <div>
+                            <img src="img/avatar-1.jpg" alt="" class="review_img">
+                            <h4 class="review_title">Jacky Chan</h4>
+                        </div>
+
+                        <div class="review_data">
+                            <div class="review_rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p class="review_description">Thank you very fast shipping from poland only 3days.</p>
+                            <span class="review_date">......</span>
+                        </div>
+                    </div>
+
+                    <div class="review_single">
+                        <div>
+                            <img src="img/avatar-2.jpg" alt="" class="review_img">
+                            <h4 class="review_title">Jacky Chan</h4>
+                        </div>
+
+                        <div class="review_data">
+                            <div class="review_rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p class="review_description">Great low price and works well.</p>
+                            <span class="review_date">......</span>
+                        </div>
+                    </div>
+
+                    <div class="review_single">
+                        <div>
+                            <img src="img/avatar-3.jpg" alt="" class="review_img">
+                            <h4 class="review_title">Jacky Chan</h4>
+                        </div>
+
+                        <div class="review_data">
+                            <div class="review_rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p class="review_description">Authentic and Beautiful, Love these way more than ever expected. They are Great earphones.</p>
+                            <span class="review_date">......</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review_form">
+                    <h4 class="review_form-title">Add a review</h4>
+                    <div class="rate_product">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <form action="" class="form grid">
+                        <textarea class="form_input textarea" placeholder="Write Comment"></textarea>
+
+                        <div class="form_group grid">
+                            <input type="text" placeholder="Name" class="form_input">
+                            <input type="email" placeholder="Email" class="form_input">
+                        </div>
+
+                        <div class="form_btn">
+                            <button class="btn">Submit Review</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!--=============== PRODUCTS ===============-->
+      <section class="products container section_lg">
+        <h3 class="section_title"><span>Related</span> Products</h3>
+        <!-- add product any 4 items  -->
+      </section>
+
+      <!--=============== NEWSLETTER ===============-->
+      <section class="newsletter section">
+        <div class="newsletter_container container grid">
+            <h3 class="newsletter_title flex"s>
+                <img src="img/icon-email.svg" class="newsletter_icon">
+                Sign up to Newsletter
+            </h3>
+
+            <p class="newsletter_description">
+                ...and receive $25 coupon for first shopping.
+            </p>
+
+            <form action="" class="newsletter_form">
+                <input placeholder="Enter your email" class="newsletter_input">
+                <button type="text" class="newsletter_btn">Subscribe</button>
+            </form>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+        <div class="footer_container grid">
+            <div class="footer_content">
+                <a href="index.html" class="footer_logo">
+                    <img src="img/logo.svg" alt="" class="footer_logo-img">
+                </a>
+                <h4 class="footer_subtitle">Contact</h4>
+
+                <p class="footer_description">
+                    <span>Address:</span> 562 wellington Road, Street 32,San Francisco
+                </p>
+                <p class="footer_description">
+                    <span>Phone:</span> 9999999999999 / 898888888888888
+                </p>
+                <p class="footer_description">
+                    <span>Hours:</span> 10:00 - 18:00, Sun - Fri
+                </p>
+
+                <div class="footer_social">
+                    <h4 class="footer_subtitle">Follow Me</h4>
+                    <div class="footer_social-links flex">
+                        <a href=""><img src="img/icon-facebook.svg" class="footer_social-icon"></a>
+
+                        <a href=""><img src="img/icon-instagram.svg" class="footer_social-icon"></a>
+
+                        <a href=""><img src="img/icon-pinterest.svg" class="footer_social-icon"></a>
+
+                        <a href=""><img src="img/icon-twitter.svg" class="footer_social-icon"></a>
+                        <a href=""><img src="img/icon-youtube.svg" class="footer_social-icon"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_content">
+                <h3 class="footer_title">Address</h3>
+                <ul class="footer_links">
+                    <li><a href="" class="footer_link">About Us</a></li>
+                    <li><a href="" class="footer_link">Delivery Information</a></li>
+                    <li><a href="" class="footer_link">Privacy Policy</a></li>
+                    <li><a href="" class="footer_link">Terms & Conditions</a></li>
+                    <li><a href="" class="footer_link">Contact Us</a></li>
+                    <li><a href="" class="footer_link">Support Center</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_content">
+                <h3 class="footer_title">My Account</h3>
+                <ul class="footer_links">
+                    <li><a href="" class="footer_link">Sign In</a></li>
+                    <li><a href="" class="footer_link">View Cart</a></li>
+                    <li><a href="" class="footer_link">My Wishlist</a></li>
+                    <li><a href="" class="footer_link">Track My Order</a></li>
+                    <li><a href="" class="footer_link">Help</a></li>
+                    <li><a href="" class="footer_link">Order</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_content">
+                <h3 class="footer_title">Secured Payment Gateways</h3>
+
+                <img src="img/payment-method.png" alt="" class="payment_img">
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <p class="copyright">&copy; 2023 ppp. All rights reserved</p>
+            <span class="designer">Designed by something</span>
+        </div>
+    </footer>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="script.js"></script>
+  </body>
+</html>
